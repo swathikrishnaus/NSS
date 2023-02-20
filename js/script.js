@@ -7,5 +7,8 @@ $(document).scroll(function () {
 })
 
 
-
-
+// ----------navlink active---------------
+function changeNav(cls){
+    $("." + cls).addClass("active");
+  }
+  // ----------navlink active---------------

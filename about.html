@@ -17,35 +17,38 @@
 
 <!-- -------------------------Navbar start------------------------------- -->
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="navbar logo" class="img-fluid"></a>
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="toggler-icon length-1 top-bar"></span>
-            <span class="toggler-icon length-2 middle-bar"></span>
-            <span class="toggler-icon length-3 bottom-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="programs.html">Programms</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blogs</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light ">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="navbar logo" class="img-fluid"></a>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon length-1 top-bar"></span>
+      <span class="toggler-icon length-2 middle-bar"></span>
+      <span class="toggler-icon length-3 bottom-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link  home-nav" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link about-nav" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link program-nav" href="programs.html">Programms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link gallery-nav" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link blog-nv" href="blog.html">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link contact-nav" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <!-- -------------------------Navbar end------------------------------- -->
 
@@ -57,20 +60,21 @@
       <h3 class="text-white fw-bold text-center">Know More About Us !</h3>
       <p class="about-us-para text-white mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin faucibus dapibus. Praesent turpis massa, pellentesque ac libero sed, euismod gravida nunc. Mauris lacinia pretium justo eu tempor. Nulla eros nisl, varius non sodales sit amet, accumsan at nunc. Sed eget felis ut ex mattis lobortis a ac odio.</p>
       <div class="text-center mt-4">
-        <a href="" class="text-decoration-none"><button class="btn btn-sm fw-bold know-more">Know More</button></a>
+        <a href="#about-desc" class="text-decoration-none"><button class="btn btn-sm fw-bold know-more">Know More</button></a>
       </div>
     </div>
   </div>
 
   <div class="container">
-    <div class="about-desc">
+    <div id="about-desc" class="about-desc">
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-6">
           <h4 class="fw-bold head-color main-head">Lorem ipsum dolor sit amet consectetur adipiscing </h4>
           <p class="para-color mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin faucibus dapibus. Praesent turpis massa, pellentesque ac libero sed, euismod gravida nunc</p>
           <p class="para-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin faucibus dapibus. Praesent turpis massa, pellentesque ac libero sed, euismod gravida nunc. Mauris lacinia pretium justo eu tempor. Nulla eros nisl, varius non sodales sit amet, accumsan at nunc. Sed eget felis ut ex mattis lobortis a ac odio.</p>
           <div class="points">
-            <div class="d-flex">
+            <div class="icons">
+              <div class="d-flex">
               <i class="bi bi-record-circle"></i>
               <p class="para-color ms-2">Lorem ipsum dolor sit amet consectetur adipiscing elit. </p>
             </div>
@@ -81,6 +85,7 @@
             <div class="d-flex">
               <i class="bi bi-record-circle"></i>
               <p class="para-color ms-2">Lorem ipsum dolor sit amet consectetur  </p>
+            </div>
             </div>
           </div>
         </div>
@@ -177,5 +182,8 @@
     <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script>
+      changeNav("about-nav");
+    </script>
   </body>
 </html>
